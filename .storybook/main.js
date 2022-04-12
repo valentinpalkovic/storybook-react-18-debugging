@@ -6,7 +6,16 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "storybook-readme",
+    "@storybook/addon-knobs",
+    "@storybook/addon-interactions",
+    "@storybook/addon-storysource"
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/react",
+  "core": {
+      "builder": "webpack5",
+  },
+  "features": {
+      "babelModeV7": true,
+  },
 }
